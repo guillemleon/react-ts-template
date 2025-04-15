@@ -40,11 +40,6 @@ rm -rf .git
 
 ### 3. Update package.json medatada with your project's information
 
-Remove .git folder and init your own repository.
-```
-rm -rf .git
-```
-
 ### 4. Install dependencies
 
 ```bash
