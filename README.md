@@ -31,19 +31,33 @@ git clone https://github.com/guillemleon/react-ts-template.git
 cd react-ts-template
 ```
 
-### 2. Install dependencies
+### 2. Remove .git folder
+
+Remove .git folder and init your own repository.
+```
+rm -rf .git
+```
+
+### 3. Update package.json medatada with your project's information
+
+Remove .git folder and init your own repository.
+```
+rm -rf .git
+```
+
+### 4. Install dependencies
 
 ```bash
 npm install
 ```
 
-### 3. Start development server
+### 5. Start development server
 
 ```bash
 npm run start
 ```
 
-### 4. Build for production
+### 6. Build for production
 
 ```bash
 npm run build
