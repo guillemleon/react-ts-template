@@ -51,22 +51,32 @@ npm run build
 
 ## Folder Structure
 
-project-root/
-├── config/
-│   ├── webpack.common.js       # Shared Webpack config
-│   ├── webpack.dev.js          # Development config
-│   └── webpack.prod.js         # Production config
-├── public/
-│   └── index.html              # HTML template
-├── src/
-│   ├── index.tsx               # App entry point
-│   ├── App.tsx                 # Example component
-│   └── styles/                 # SCSS / CSS files
-├── .babelrc                    # Babel configuration
-├── tsconfig.json               # TypeScript compiler config
-├── package.json
-├── LICENSE
-└── README.md
+/react-ts-template/
+│
+├── /config/                  # Webpack configuration files
+│   ├── webpack.common.js     # Common Webpack configuration
+│   ├── webpack.dev.js        # Development Webpack configuration
+│   └── webpack.prod.js       # Production Webpack configuration
+│
+├── /node_modules/            # Installed npm dependencies
+│
+├── /public/                  # Public assets
+│   └── index.html            # HTML template
+│
+├── /src/                     # Source code for the app
+│   ├── index.tsx             # Entry point for React
+│   ├── App.tsx               # Main React component
+│   └── /assets/              # Images and other assets
+│
+├── /dist/                    # Build output directory (generated after building)
+│
+├── .babelrc                  # Babel configuration
+├── .gitignore                # Git ignore file
+├── LICENSE                   # License file (your custom license)
+├── README.md                 # Project documentation
+├── package.json              # Project metadata and npm scripts
+└── tsconfig.json             # TypeScript configuration
+
 
 
 ## Scripts
