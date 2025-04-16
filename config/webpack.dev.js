@@ -10,32 +10,29 @@ console.log('>>> Open: chrome');
 
 /** @type {import('webpack').Configuration} */
 const devConfig = {
-    mode: 'development',
-    devServer: {
-        port: 8080,
-        hot: true,
-        static: {
-            directory: path.resolve(__dirname, '../dist')
-        },
-        open: {
-            app: {
-                name: 'chrome'
-            }
-        }
+  mode: 'development',
+  devServer: {
+    port: 8080,
+    hot: true,
+    static: {
+      directory: path.resolve(__dirname, '../dist'),
     },
-    module: {
-        rules: [
-            {
-                use: ['style-loader', 'css-loader', 'sass-loader'],
-                test: /.(css|sass|scss|less)$/
-            }
-        ]
+    open: {
+      app: {
+        name: 'chrome',
+      },
     },
-    plugins: [
-        new HotModuleReplacementPlugin(),
-        new ReactRefreshWebpackPlugin()
+  },
+  module: {
+    rules: [
+      {
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+        test: /.(css|sass|scss|less)$/,
+      },
     ],
-    devtool: "eval-source-map"
-}
+  },
+  plugins: [new HotModuleReplacementPlugin(), new ReactRefreshWebpackPlugin()],
+  devtool: 'eval-source-map',
+};
 
 module.exports = merge(common, devConfig);

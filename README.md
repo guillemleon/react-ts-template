@@ -34,6 +34,7 @@ cd react-ts-template
 ### 2. Remove .git folder
 
 Remove .git folder and init your own repository.
+
 ```
 rm -rf .git
 ```

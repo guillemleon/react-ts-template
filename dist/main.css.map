@@ -1,0 +1,1 @@
+{"version":3,"file":"main.css","mappings":"AAAA,KACE,YACA,W","sources":["webpack://react-ts-template/./src/App.css"],"sourcesContent":[".app {\n  height: 100%;\n  width: 100%;\n}\n"],"names":[],"sourceRoot":""}

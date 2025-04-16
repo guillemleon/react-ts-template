@@ -6,22 +6,22 @@ console.log('>>> Running production mode...');
 
 /** @type {import('webpack').Configuration} */
 const prodConfig = {
-    mode: "production",
-    devtool: "source-map",
-    optimization: {
-        splitChunks: {
-            chunks: 'all'
-        }
+  mode: 'production',
+  devtool: 'source-map',
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
     },
-    plugins: [new MiniCssExtractPlugin()],
-    module: {
-        rules: [
-            {
-                use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
-                test: /.(css|sass|scss|less)$/,
-            }
-        ]
-    }
-}
+  },
+  plugins: [new MiniCssExtractPlugin()],
+  module: {
+    rules: [
+      {
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+        test: /.(css|sass|scss|less)$/,
+      },
+    ],
+  },
+};
 
 module.exports = merge(common, prodConfig);
